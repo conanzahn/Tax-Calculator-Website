@@ -1,8 +1,8 @@
 {
   "name": "tax-calculator-website",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "./",
+  "private": false,
+  "homepage": " https://conanzahn.github.io/tax-calculator-website/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -11,6 +11,7 @@
     "@types/node": "^16.11.19",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "mini-css-extract-plugin": "^2.4.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
