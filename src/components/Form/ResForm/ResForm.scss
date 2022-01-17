@@ -1,0 +1,90 @@
+@import '../../../assets/variables.scss';
+@import '../CalcForm/CalcForm.scss';
+
+.res-form {
+  margin: 87px 16px 87px 32px;
+  padding: 16px;
+  .heading {
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: $black;
+  }
+  .form-group {
+    margin-top: 16px;
+    position: relative;
+
+    .label {
+      display: block;
+      font-family: Lato;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      color: black;
+    }
+    .input {
+      margin-top: 8px;
+      border: none;
+      background: #d6d6d6;
+      color: #353535;
+      box-sizing: border-box;
+      border-radius: 5px;
+      width: 300px;
+      height: 40px;
+      padding-left: 14px;
+      -webkit-appearance: none;
+      .input-text {
+        @include input-text;
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 11px;
+      }
+    }
+    .arrow-down {
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 8px solid $disabled;
+      position: absolute;
+      top: 37px;
+      right: 14px;
+    }
+    .input-amount {
+      margin-top: 8px;
+      border: none;
+      background: $dis-bg;
+      box-sizing: border-box;
+      border-radius: 5px;
+      width: 300px;
+      height: 40px;
+      padding-left: 31px;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    }
+    .text-dollar {
+      @include text;
+      left: 13px;
+      color: $disabled;
+    }
+    .text-value {
+      @include text;
+      right: 12px;
+      color: $disabled;
+    }
+  }
+  .link {
+    margin-top: 16px;
+    .link-text {
+      font-family: Lato;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      text-decoration-line: underline;
+      color: $purple;
+    }
+  }
+}

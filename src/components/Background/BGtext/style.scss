@@ -1,0 +1,21 @@
+@import '../../../assets/variables.scss';
+
+.text {
+  font-family: $primary-font;
+  color: $white;
+  position: absolute;
+  top: 160px;
+  left: 78px;
+  .title {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 58px;
+    margin: 0;
+  }
+  .sub-title {
+    margin-top: 2px;
+    font-size: 16px;
+    line-height: 19px;
+    width: 226px;
+  }                                                                
+}

@@ -1,0 +1,68 @@
+@import '../../../assets/variables.scss';
+
+@mixin label-theme {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: $white;
+}
+
+.form {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  padding: 20px;
+  .head {
+    .label {
+      @include label-theme();
+    }
+    .taxable {
+      display: flex;
+      justify-content: center;
+      background: $white;
+      border-radius: 5px;
+      margin-top: 8px;
+      padding: 13px 0 14px 0;
+      .taxable-text {
+        font-family: Lato;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 43px;
+        color: $purple;
+      }
+    }
+  }
+  .detail {
+    margin-top: 16px;
+    .label {
+      @include label-theme();
+    }
+    .bracket {
+      background: $white;
+      border-radius: 3px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+      width: 280px;
+      .left {
+        margin: 10px 0 10px 14px;
+        font-family: Lato;
+        font-size: 12px;
+        line-height: 14px;
+        color: $black;
+        .title {
+          font-weight: bold;
+        }
+      }
+      .tax-value {
+        font-family: Lato;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: $purple;
+        margin: 12px 15px 14px 0;
+      }
+    }
+  }
+}

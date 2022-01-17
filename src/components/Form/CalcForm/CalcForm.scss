@@ -1,0 +1,139 @@
+@import '../../../assets/variables.scss';
+
+@mixin input-theme {
+  margin-top: 8px;
+  border: 1px solid #a4a4a4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 300px;
+  height: 40px;
+}
+@mixin input-text {
+  font-family: Lato;
+  font-weight: 500;
+  color: $black;
+}
+@mixin text {
+  position: absolute;
+  top: 32px;
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: $black;
+}
+
+.calc-form {
+  margin: 47px 32px 47px 16px;
+  max-width: 418px;
+  padding: 16px 16px 16px 16px;
+  .heading {
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: $black;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .info-box {
+    margin-top: 16px;
+    border: 2px solid $purple;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px $light-purple;
+    border-radius: 5px;
+    padding: 8px 0 8px 12px;
+    width: 300px;
+    position: relative;
+    .icon {
+      position: absolute;
+      bottom: 5px;
+      font-family: Lato;
+      font-weight: 800;
+      font-size: 15px;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      padding: px;
+      background: none;
+      border: 2.2px solid $purple;
+      color: $purple;
+      text-align: center;
+    }
+    .content {
+      color: $purple;
+      margin-left: 30px;
+      font-family: Lato;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+  .form-group {
+    margin-top: 16px;
+    position: relative;
+
+    .label {
+      display: block;
+      font-family: Lato;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      color: black;
+    }
+    .input {
+      @include input-theme;
+      padding-left: 14px;
+      -webkit-appearance: none;
+      .input-text {
+        @include input-text;
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 11px;
+      }
+    }
+    .arrow-down {
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 8px solid #585757;
+      position: absolute;
+      top: 37px;
+      right: 14px;
+    }
+    .input-amount {
+      @include input-theme;
+      padding-left: 31px;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    }
+    .text-dollar {
+      @include text;
+      left: 13px;
+    }
+    .text-value {
+      @include text;
+      right: 12px;
+    }
+  }
+  .btn {
+    background: #8477c9;
+    border: hidden;
+    box-shadow: 0px 4px 8px #e7e7ff;
+    border-radius: 5px;
+    width: 300px;
+    height: 43px;
+    margin-top: 16px;
+    .btn-text {
+      font-family: Lato;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: white;
+    }
+  }
+}
