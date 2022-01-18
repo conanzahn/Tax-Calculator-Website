@@ -1,10 +1,11 @@
-# VisualCortex Frontend Exercise
+# Tax Calculator Web App
 
 ## Introduction
 
 This tax calculator website was implemented by using React, Typescript, SASS, React-Redux, React-Router, HTML.
 
-You can check deployment in this [site]: (https://react-ts-9jrkrz.stackblitz.io)
+You can check the implementation [here:](https://stackblitz.com/edit/react-ts-9jrkrz?file=README.md).
+
 
 ## Structure
 
@@ -41,7 +42,7 @@ You can check deployment in this [site]: (https://react-ts-9jrkrz.stackblitz.io)
 
 ## Getting Started
 
-1. Clone this repo to your local machine 
+1. Clone this repo to your local machine ```[git clone https://github.com/conanzahn/tax-calculator-website.git]```
 2. Install the dependencies ```[npm install]```
 
 
