@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# VisualCortex Frontend Exercise
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+This tax calculator website was implemented by using React, Typescript, SASS, React-Redux, React-Router, HTML.
 
-In the project directory, you can run:
+You can check deployment in this [site]: (https://react-ts-9jrkrz.stackblitz.io)
 
-### `npm start`
+## Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+.
+└── assets           # Assets
+│   	└── variable         	# CSS: font & color variable
+├── components       # Components
+│   │── Background      # component - background (image, text, form)
+│   │── Form            # component - from (calculate, result)
+│   └── TaxCompute      # component - tax computation
+├── pages            # Pages
+│   │── Calculate       # Page - Calculate
+│   └── Result        	# Page - Result
+├── Redux            # Redux
+│   │── actions         # Redux - actions: Calculate
+│   │── reducers        # Redux - reducers: Calculate
+│   └── store           # Redux - store
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Maintainable
 
-### `npm test`
+- Further options for country and year could be added directly into the form <option>: <select><option></option></select>
+- Further tax table for different country year option could be added into <TaxTable>:
+  ```bash
+  ├── components       # Components
+  │   │── Background      # component - background (image, text, form)
+  │   │   │── BgForm        # tax result form in background
+  │   │   │   │── TaxTable    # tax tables for corresponding country and year
+  ```
+  Future adjustments to the tax rate values can also be modified in this file.
+- All text can be reviewed and modified in [constant.ts] file in each component.
+- Further sharable data can be added into the [redux] folder.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+1. Clone this repo to your local machine 
+2. Install the dependencies ```[npm install]```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Run the application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+##### ```[npm start]```(This will start the website on the address [localhost:3000](http://localhost:3000))

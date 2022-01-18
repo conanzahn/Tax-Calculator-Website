@@ -12,7 +12,6 @@ import { submitTaxAction } from '../../../redux/actions/calculate';
 import { connect } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import ITaxInputs from '../../../types/ITaxInputs';
-import { Interface } from 'readline';
 
 interface ICalcForm {
   submitTaxAction: Function

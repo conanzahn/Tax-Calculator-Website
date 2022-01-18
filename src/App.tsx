@@ -1,7 +1,7 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, {Suspense} from 'react';
+import { Route, HashRouter, Routes  } from 'react-router-dom';
 import './style.scss';
-import Demo from './pages/Calculate';
+import Home from './pages/Calculate';
 import Result from './pages/Result';
 import store from './redux/store';
 import { Provider } from 'react-redux';
@@ -9,14 +9,15 @@ import { Provider } from 'react-redux';
 const App = () => {
   return (
     <Provider store={store}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Demo />} />
-          <Route path="result" element={<Result />}></Route>
-        </Routes>
-      </BrowserRouter>
-    </Provider>
+        <HashRouter basename={process.env.PUBLIC_URL}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="result" element={<Result />}></Route>
+          </Routes>
+        </HashRouter >
+    </Provider> 
   );
 };
 
 export default App;
+
